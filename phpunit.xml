@@ -1,0 +1,16 @@
+<phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/|version|/phpunit.xsd"
+	 bootstrap="./vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="true"
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="3"
+         timeoutForLargeTests="5"
+         verbose="false">
+  <!-- ... -->
+</phpunit>
+
