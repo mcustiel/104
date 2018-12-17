@@ -2,7 +2,7 @@
 
 Simple implementation of CommandBus and QueryBus that just works.
 
-The CommandBus and QueryBus usage is very similar. The main difference is that the commands don't return a value and the query returns an optional one.
+The CommandBus and QueryBus usage is very similar. The main difference is that the commands don't return a value and the queries return an optional one.
 
 ## Example
 
