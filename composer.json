@@ -21,7 +21,7 @@
             "Mcustiel\\OneHundredFour\\" : "src"
         }
     },
-    "name" : "mcustiel/one-hundred-four",
+    "name" : "mcustiel/104",
     "type" : "library",
     "description" : "A simple helper to implement CommandBus and QueryBus",
     "license" : "GPL-3.0-or-later",
