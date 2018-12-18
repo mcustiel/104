@@ -6,8 +6,9 @@ The CommandBus and QueryBus usage is very similar. The main difference is that t
 
 ## Example
 
-Use in symfony:
+### Usage in Symfony:
 
+Prepare the query (or the command) and dispatch it through the proper bus.
 ```php
 <?php
 // UserController.php
@@ -50,6 +51,7 @@ class UsersController extends Controller
     }
 ```
 
+This is how a query looks, it needs to implement query.
 ```php
 <?php
 // GetUserDataQuery.php
@@ -71,11 +73,13 @@ class GetUserDataQuery implements Query
 
     public function getQueryHandler(): HandlerIdentifier
     {
+        // The identifier is a string with the key of the object in the container.
         return new HandlerIdentifier(GetUserDataQueryHandler::class);
     }
 }
 ```
 
+In the handler class is where all the logic to retrieve the value of the query or to execute the command is located:
 ```php
 <?php
 // GetUserDataQueryHandler.php
@@ -97,6 +101,7 @@ class GetUserDataQueryHandler implements QueryHandler
 }
 ```
 
+The optional result is a way to manage a query that can return null or a value. This is not needed for commands because they return void.
 ```php
 <?php
 // GetUserDataQueryOptionalResult.php
