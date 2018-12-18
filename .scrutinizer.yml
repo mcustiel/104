@@ -23,3 +23,11 @@ build:
     redis: false
     php:
       version: 7.2
+  nodes:
+    coverage:
+      file: build/coverage.xml
+      format: clover
+    analysis:
+      tests:
+        override:
+        - php-scrutinizer-run
