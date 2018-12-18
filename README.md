@@ -29,7 +29,7 @@ class UsersController extends Controller
     /**
      * @Route("/user/{id}", name="user_data", methods={"GET"})
      */
-    public function getLoggedUserData($id): Response
+    public function getUserData($id): Response
     {
         try {
             $userId = new UserId($id);
