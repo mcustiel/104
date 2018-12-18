@@ -4,6 +4,8 @@ Simple implementation of CommandBus and QueryBus that just works.
 
 The CommandBus and QueryBus usage is very similar. The main difference is that the commands don't return a value and the queries return an optional one.
 
+[![Build Status](https://scrutinizer-ci.com/g/mcustiel/104/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mcustiel/104/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mcustiel/104/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mcustiel/104/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/mcustiel/104/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mcustiel/104/?branch=master)
+
 ![Cutcsa 104 paso carrasco](./files/cutcsa-viejo-104.jpg)
 
 ## Example
