@@ -11,6 +11,10 @@
          timeoutForMediumTests="3"
          timeoutForLargeTests="5"
          verbose="false">
-  <!-- ... -->
+   <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
 </phpunit>
 

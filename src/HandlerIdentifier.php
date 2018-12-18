@@ -22,9 +22,7 @@ class HandlerIdentifier
         return $this->identifier;
     }
 
-    /**
-     * @throws \InvalidArgumentException
-     */
+    /** @throws \InvalidArgumentException */
     private function ensureNotEmpty(string $identifier): void
     {
         if (empty($identifier)) {

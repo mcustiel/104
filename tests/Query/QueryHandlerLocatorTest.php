@@ -11,6 +11,7 @@ use Mcustiel\OneHundredFour\Query\QueryHandlerLocator;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/** @covers \Mcustiel\OneHundredFour\Query\QueryHandlerLocator */
 class QueryHandlerLocatorTest extends TestCase
 {
     /** @var ContainerInterface|\PHPUnit\Framework\MockObject\MockObject */

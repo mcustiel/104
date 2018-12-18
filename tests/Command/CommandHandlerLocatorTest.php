@@ -11,6 +11,7 @@ use Mcustiel\OneHundredFour\HandlerIdentifier;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/** @covers \Mcustiel\OneHundredFour\Command\CommandHandlerLocator */
 class CommandHandlerLocatorTest extends TestCase
 {
     /** @var ContainerInterface|\PHPUnit\Framework\MockObject\MockObject */

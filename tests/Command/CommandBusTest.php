@@ -12,6 +12,7 @@ use Mcustiel\OneHundredFour\HandlerIdentifier;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
+/** @covers \Mcustiel\OneHundredFour\Command\CommandBus */
 class CommandBusTest extends TestCase
 {
     /** @var CommandHandlerLocator|MockObject */

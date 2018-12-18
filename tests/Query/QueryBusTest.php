@@ -12,6 +12,7 @@ use Mcustiel\OneHundredFour\Query\QueryHandlerLocator;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
+/** @covers \Mcustiel\OneHundredFour\Query\QueryBus */
 class QueryBusTest extends TestCase
 {
     /** @var QueryHandlerLocator|MockObject */
