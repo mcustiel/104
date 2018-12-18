@@ -8,6 +8,8 @@ The CommandBus and QueryBus usage is very similar. The main difference is that t
 
 ### Usage in Symfony:
 
+First you need to add your command handlers and query handlers to a container implementing PSR-11. This container has to be injected into the CommandHandlerLocator and/or the QueryHandlerLocator.
+
 Prepare the query (or the command) and dispatch it through the proper bus.
 ```php
 <?php
