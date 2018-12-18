@@ -10,8 +10,15 @@
          timeoutForSmallTests="1"
          timeoutForMediumTests="3"
          timeoutForLargeTests="5"
-         verbose="false">
-   <filter>
+	 verbose="false">
+
+   
+    <testsuites>
+        <testsuite name="default">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>	 
+    <filter>
         <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">src</directory>
         </whitelist>
